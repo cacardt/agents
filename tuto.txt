@@ -1,0 +1,48 @@
+Création de l'architecture logicielle
+-------------------------------------
+
+Vous devez créer une classe Agent dans un fichier agent.py.
+Cette classe peut-être instanciée dans un fichier main.py.
+
+L'arborescence de de votre dossier de travail devrait ressembler à ça :
+
+- src
+|----- agent.py
+|----- main.py
+
+
+Création de votre agent
+-----------------------
+
+Vous devez avoir une classe nommée Agent.
+Un agent peut contenir un ensemble d'objets (modules) qui lui permettent 
+plus ou moins de réfléchir (voir exemple).
+
+
+La classe agent doit au minimum contenir les méthodes suivantes :
+
++__init__(self, params1, ..., parmsn)
++ act(self, observation)
++ observe(self)
++ isAlive(self)
+
+- act() est l'endroit où la prochaine action de l'agent est sélectionnée et exécutée (appel à l'API).
+- observe() est la méthode qui récupère une vue de son environnement (l'arène, via l'API).
+Cette dernière retourne une variable contenant une vue de l'environnement. Cette vue est donnée 
+à act() pour aider à la prise de décision.
+- isAlive() permet de savoir si votre agent est mort (ou non)
+
+Vous pouvez en ajouter d'autres si nécessaire !
+
+
+
+Création du main
+----------------
+
+Le main doit instancier votre (vos) agent(s).
+Un agent continue de jouer tant qu'il n'est pas mort.
+
+Voir l'exemple python de la boucle.
+
+
+
